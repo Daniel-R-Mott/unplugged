@@ -84,6 +84,134 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*---------------BASE HEADER - FOOTER STYLES ------------*/
+
+header,
+footer {
+display: flex;
+}
+
+header {
+  justify-content: center;
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .social .icons {
+
+}
+
+footer .social p {
+
+}
+
+/* HEADER STYLES */
+header {
+
+}
+
+header .wrapper {
+flex-flow: row wrap;
+}
+
+header nav {
+
+}
+
+header nav ul {
+justify-content: space-around;
+}
+
+header nav ul li {
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.header-divider {
+
+}
+
+
+
+
+/*--------------------Mobile Styles - Home--------------*/
+
+.hero-area {
+
+}
+
+aside {
+
+}
+
+.form-description {
+
+}
+
+.form {
+
+}
+
+.features {
+
+}
+
+.features .wrapper {
+
+}
+
+.features-item-description {
+flex-flow: row wrap;
+}
+
+.reviews {
+
+}
+
+.reviews .wrapper {
+
+}
+
+/*------------------Mobile Styles - About-----------------*/
+
+.mission {
+
+}
+
+.contact-section {
+
+}
+
+/*--------------------Moobile Styles - FAQ-----------------*/
+
+.faq {
+
+}
+
+.faq .wrapper {
+
+}
+
+/*---------------------------FOOTER STYLES ----------------*/
+
+footer {
+
+}
+
+footer .wrapper {
+
+}
+
+.contact {
+
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
