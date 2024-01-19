@@ -86,129 +86,164 @@ textarea {
 
 /*---------------BASE HEADER - FOOTER STYLES ------------*/
 
-header,
-footer {
-display: flex;
-}
-
 header {
+  display: flex;
   justify-content: center;
+  padding: 15px 0;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0;
+}
+
+.header-divider {
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
+}
+
+header nav {
+  width: 60%;
+}
+
+header nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 }
 
 footer {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-footer .social .icons {
-
+footer p {
+  margin: 0;
 }
 
-footer .social p {
-
+footer .wrapper {
+  width: 55%;
 }
 
-/* HEADER STYLES */
-header {
-
+footer .contact {
+  margin-bottom: 50px;
 }
 
-header .wrapper {
-flex-flow: row wrap;
-}
-
-header nav {
-
-}
-
-header nav ul {
+footer .icons {
+display: flex;
 justify-content: space-around;
+align-items: center;
 }
 
-header nav ul li {
-  text-transform: uppercase;
-  list-style: none;
+footer .icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.header-divider {
-
+footer .copyright {
+  margin: 20px 0;
 }
-
-
 
 
 /*--------------------Mobile Styles - Home--------------*/
 
 .hero-area {
-
+display: flex;
+justify-content: center;
 }
 
 aside {
-
+  display: flex;
+  justify-content: center;
 }
 
-.form-description {
-
-}
-
-.form {
-
+aside h3 {
+  width: 80%;
+  padding: 20px 0;
 }
 
 .features {
-
+  display: flex;
+  justify-content: center;
 }
 
-.features .wrapper {
-
+.features h2 {
+  margin-bottom: 60px;
 }
 
-.features-item-description {
-flex-flow: row wrap;
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p {
+  padding-top: 40px;
+  margin: 0;
 }
 
 .reviews {
-
 }
 
 .reviews .wrapper {
+  padding: 50px 0;
+}
+.reviews h3 {
+  width: 50%;
+  justify-content: left;
+  padding: 20px 0;
+}
 
+.reviews h2 {
+  padding: 20px 0;
 }
 
 /*------------------Mobile Styles - About-----------------*/
 
 .mission {
-
+  display: flex;
+  justify-content: center;
 }
 
 .contact-section {
-
+  display: flex;
+  justify-content: center;
 }
 
+.contact-content p {
+  margin: 0;
+}
 /*--------------------Moobile Styles - FAQ-----------------*/
 
 .faq {
-
+  display: flex;
+  justify-content: center;
 }
 
 .faq .wrapper {
-
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 50px 0 0 0;
 }
 
-/*---------------------------FOOTER STYLES ----------------*/
-
-footer {
-
+.faq h2 {
+  margin-bottom: 40px;
 }
 
-footer .wrapper {
-
+.faq-content {
+  margin-bottom: 50px;
 }
 
-.contact {
-
-}
 
 
 
@@ -372,4 +407,3 @@ footer .wrapper {
     page-break-after: avoid;
   }
 }
-
