@@ -84,6 +84,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
 /*---------------BASE HEADER - FOOTER STYLES ------------*/
 
 header {
@@ -156,20 +160,21 @@ footer .copyright {
 
 /*--------------------Mobile Styles - Home--------------*/
 
+/* hero area */
+
 .hero-area {
 display: flex;
 justify-content: center;
 }
+
+/* aside */
 
 aside {
   display: flex;
   justify-content: center;
 }
 
-aside h3 {
-  width: 80%;
-  padding: 20px 0;
-}
+/* features */
 
 .features {
   display: flex;
@@ -185,25 +190,31 @@ aside h3 {
   margin: 30px 0;
 }
 
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
 .features p {
-  padding-top: 40px;
   margin: 0;
 }
 
+/* reviews */
+
 .reviews {
+  display: flex;
+  justify-content: center;
 }
 
-.reviews .wrapper {
-  padding: 50px 0;
-}
 .reviews h3 {
-  width: 50%;
-  justify-content: left;
+  width: 55%;
   padding: 20px 0;
 }
 
 .reviews h2 {
-  padding: 20px 0;
+  margin-bottom: 40px;
 }
 
 /*------------------Mobile Styles - About-----------------*/
@@ -330,8 +341,21 @@ aside h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  header .wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+  header figure {
+    width: 30%;
+  }
+  header nav {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  
 }
 
 @media print,
