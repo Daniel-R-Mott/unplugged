@@ -104,17 +104,15 @@ header .wrapper {
   margin: 0;
 }
 
-
-header a {
+header figure {
   display: flex;
   justify-content: center;
+  width: 60%;
 }
 
 header img {
-  width: 60%;
-
+  width: 100%;
 }
-
 
 .header-divider {
   width: 100%;
@@ -155,9 +153,9 @@ footer .contact {
 }
 
 footer .icons {
-display: flex;
-justify-content: space-around;
-align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer .icons p {
@@ -170,14 +168,17 @@ footer .copyright {
   margin: 20px 0;
 }
 
-
 /*--------------------Mobile Styles - Home--------------*/
 
 /* hero area */
 
 .hero-area {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-area img {
+  max-width: 100%;
 }
 
 /* aside */
@@ -245,7 +246,7 @@ aside {
 .contact-content p {
   margin: 0;
 }
-/*--------------------Moobile Styles - FAQ-----------------*/
+/*--------------------Mobile Styles - FAQ-----------------*/
 
 .faq {
   display: flex;
@@ -267,9 +268,6 @@ aside {
 .faq-content {
   margin-bottom: 50px;
 }
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -349,36 +347,140 @@ aside {
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+  MEDIA QUERIES
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
+  /* TABLET STYLES */
+
+  /* GENERAL STYLES */
   .wrapper {
-    width: 80%;
     max-width: 640px;
+    margin: 100px 0;
+  }
+
+  /* HEADER */
+  header {
+    padding: 33px 0;
   }
   header .wrapper {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  header nav {
+    width: 20%;
+  }
+  header nav ul {
+    justify-content: space-between;
+  }
+  .header-divider {
+    display: none;
+  }
+
+  /* HERO AREA */
+  .hero-area {
+    margin: 100px 0;
+  }
+
+  /* ASIDE */
+  aside .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin: 50px 0;
+  }
+  aside .form-description,
+  aside .form {
+    width: 40%;
+    margin: 0;
+  }
+
+  /* FEATURES */
+  .features article {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    flex-basis: 50%;
+  }
+
+  .features-item-description {
+    width: 50%;
+  }
+
+  /* REVIEWS */
+  .reviews article {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reviews article div {
+    width: 49%;
+  }
+
+  /* FOOTER */
+  footer .wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-flow: row wrap;
   }
-  header img {
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
+  /*=======================================
+  ABOUT PAGE
+  ========================================*/
+
+  .mission-content {
     display: flex;
-    width: 30%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding-top: 20px;
   }
-  header figure a {
-    width: 30%;
+
+  .mission-content p {
+    width: 45%;
   }
-  header nav {
-    width: 25%;
+
+  .contact-section .wrapper h2 {
+    width: 80%;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  /*=======================================
+  FAQ PAGE
+  ========================================*/
+
+  .faq .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis:  45%;
+  }
+
+  .faq h2 {
+    width: 100%;
   }
 
 }
-
 @media only screen and (min-width: 1200px) {
-  
 }
 
 @media print,
