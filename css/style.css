@@ -84,12 +84,49 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html {
+    font-size: 1rem;
+    color: #e2e3ed;
+   }
+   body {
+    font-family: 'Open Sans', sans-serif;
+   }
+   ul,
+   ol {}
+   a {
+    color: #e2e3ed;
+    text-decoration: none;
+   }
+   h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    font-weight: 500;
+   }
+   h3,
+   h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+   }
+   p {
+    font-size: .875em;
+    line-height: 1.125em;
+   }
+   img {}
+   figure {}
+  address {}
+  .wrapper {}
+
+
 .wrapper {
   width: 90%;
   margin: 50px 0;
 }
 /*---------------BASE HEADER - FOOTER STYLES ------------*/
-
+header,
+footer {
+  background: #202322;
+}
 header {
   display: flex;
   justify-content: center;
@@ -133,6 +170,11 @@ header nav ul {
   padding: 0;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+  font-weight: bold;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -156,12 +198,16 @@ footer .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 1.3125;
 }
 
 footer .icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .contact address {
+  font-style: normal;
 }
 
 footer .copyright {
@@ -171,7 +217,9 @@ footer .copyright {
 /*--------------------Mobile Styles - Home--------------*/
 
 /* hero area */
-
+.hero-area h1 {
+  font-size: 2.25em;
+}
 .hero-area {
   display: flex;
   justify-content: center;
@@ -193,6 +241,10 @@ aside {
 .features {
   display: flex;
   justify-content: center;
+}
+
+.features-items .fontawesome-icon {
+  font-size: 3.75em;
 }
 
 .features h2 {
@@ -220,6 +272,7 @@ aside {
 .reviews {
   display: flex;
   justify-content: center;
+  background: #2a423a;
 }
 
 .reviews h3 {
@@ -267,6 +320,10 @@ aside {
 
 .faq-content {
   margin-bottom: 50px;
+}
+
+.faq-content h4 {
+  line-height: 1.5em;
 }
 
 /* ==========================================================================
@@ -480,7 +537,6 @@ aside {
   }
 }
 
-
 @media only screen and (min-width: 1200px) {
   /* DESKTOP STYLES */
 
@@ -493,48 +549,47 @@ aside {
   header {
     padding: 15px 0;
   }
-/* HERO AREA */
-.hero-area h1 {
+  /* HERO AREA */
+  .hero-area h1 {
     width: 80%;
   }
 
-/* ASIDE */
-aside .content-wrapper {
-  justify-content: space-around;
-}
+  /* ASIDE */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
 
-aside .form-description,
-aside .form {
-  width: 30%;
-}
+  aside .form-description,
+  aside .form {
+    width: 30%;
+  }
 
-/* FEATURES */
-.features h2 {
-  width: 90%;
-}
-.features article {
-  flex-basis: 33.33%;
-}
-/* REVIEWS */
-.reviews article div {
-  width: 42%;
-}
+  /* FEATURES */
+  .features h2 {
+    width: 90%;
+  }
+  .features article {
+    flex-basis: 33.33%;
+  }
+  /* REVIEWS */
+  .reviews article div {
+    width: 42%;
+  }
 
   /* ==========================================================================
   About Page
   ========================================================================== */
-.mission h2,
-.contact-section .wrapper h2 {
-  width: 95%
-}
+  .mission h2,
+  .contact-section .wrapper h2 {
+    width: 95%;
+  }
 
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
-.faq h2 {
-  width: 100%;
-}
-
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media print,
