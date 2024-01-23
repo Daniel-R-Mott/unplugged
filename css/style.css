@@ -206,15 +206,21 @@ footer .contact {
 
 footer .icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  font-size: 1.3125;
+
+  border-radius: 5px;
 }
 
 footer .icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #527158;
+  font-size: 1.3125em;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
 }
 footer .contact address {
   font-style: normal;
@@ -655,8 +661,19 @@ input[type="button"] {
     width: 40%;
   }
 
+  footer h4 {
+    width: 100%;
+  }
   footer .social {
     width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  footer .icons {
+   justify-content: space-around;
+   width: 100%;
   }
 
   footer .copyright {
@@ -725,7 +742,7 @@ input[type="button"] {
   .faq h4,
   .faq p {
     font-size: 0.875em;
-    line-height: .9844em;
+    line-height: 0.9844em;
   }
   .faq-content {
     flex-basis: 45%;
@@ -805,6 +822,11 @@ input[type="button"] {
   .reviews article div {
     width: 100%;
     margin-left: 40px;
+  }
+
+  /* footer */
+  footer .icons {
+    width: 65%;
   }
 
   /* ==========================================================================
