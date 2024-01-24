@@ -197,7 +197,9 @@ footer p {
 }
 
 footer .wrapper {
-  width: 55%;
+  width: 65%;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer .contact {
@@ -207,9 +209,8 @@ footer .contact {
 footer .icons {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  border-radius: 5px;
+  width: 100%;
+  width: 200px;
 }
 
 footer .icons p {
@@ -221,6 +222,10 @@ footer .icons p {
   width: 45px;
   height: 45px;
   border-radius: 100%;
+}
+
+footer  {
+
 }
 footer .contact address {
   font-style: normal;
