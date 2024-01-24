@@ -235,7 +235,7 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  background-image: url(/img/unplugged-retreat.jpg);
+  background-image: url(img/unplugged-retreat.jpg);
   background-position: center;
   background-size: cover;
   padding: 50px 0;
@@ -264,7 +264,7 @@ aside {
 .features {
   display: flex;
   justify-content: center;
-  background: url(/img/unplugged-retreat-features.jpg);
+  background: url(img/unplugged-retreat-features.jpg);
 }
 
 .features .wrapper {
